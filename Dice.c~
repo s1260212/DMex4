@@ -1,0 +1,28 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+ 
+int main(void){
+ 
+  int s;
+ 
+
+  srand(time(NULL));
+ 
+
+  s = rand() % 6 + 1;
+ 
+
+  printf("Dice 1: %d \n", s);
+
+  srand(time(NULL));
+ 
+
+  s = rand() % 6 + 1;
+ 
+
+  printf("Dice 2: %d \n", s);
+ 
+  return 0;
+}
